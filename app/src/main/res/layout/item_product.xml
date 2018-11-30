@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.tony.shopapp.ui.base.swipeRevealLayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swpl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:dragEdge="right"
+    app:mode="same_level">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/ibDelete"
+            android:layout_width="57dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorItemDeleteButton"
+            android:src="@drawable/ic_trash" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivProductImage"
+            android:layout_width="80dp"
+            android:layout_height="58dp"
+            android:layout_margin="12dp" />
+
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_toEndOf="@id/ivProductImage"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="?textAppearanceLabel"
+            tools:text="Акция Дор Блю" />
+
+        <TextView
+            android:id="@+id/tvProductDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvProductName"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_toEndOf="@id/ivProductImage"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="?textAppearanceDescription"
+            tools:text="Вкусный французский сыр" />
+
+        <ImageButton
+            android:id="@+id/ibBasket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ivProductImage"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/ivProductImage"
+            android:background="@drawable/ic_basket" />
+
+        <TextView
+            android:id="@+id/tvDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ivProductImage"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@id/ibBasket"
+            android:background="@drawable/discount_background"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textAppearance="?textAppearanceDiscount"
+            tools:text="-50%" />
+
+        <TextView
+            android:id="@+id/tvPriceWithoutDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tvCurrentPrice"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:textAppearance="?textAppearancePriceWithoutDiscount"
+            tools:text="198 Р" />
+
+        <TextView
+            android:id="@+id/tvCurrentPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ivProductImage"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="2dp"
+            android:textAppearance="?textAppearanceDescription"
+            android:textColor="@color/colorRedSoft"
+            tools:text="99 Р" />
+    </RelativeLayout>
+
+</com.example.tony.shopapp.ui.base.swipeRevealLayout.SwipeRevealLayout>

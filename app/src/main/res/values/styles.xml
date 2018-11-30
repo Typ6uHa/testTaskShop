@@ -1,0 +1,55 @@
+<resources>
+
+    <attr name="textAppearanceSmall" format="reference" />
+    <attr name="textAppearanceLabel" format="reference" />
+    <attr name="textAppearanceDescription" format="reference" />
+    <attr name="textAppearanceDiscount" format="reference" />
+    <attr name="textAppearancePriceWithoutDiscount" format="reference" />
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="textAppearanceSmall">@style/TextAppearance.AppTheme.Small</item>
+        <item name="textAppearanceLabel">@style/TextAppearance.AppTheme.Product.Label</item>
+        <item name="textAppearanceDescription">@style/TextAppearance.AppTheme.Product.Description
+        </item>
+        <item name="textAppearanceDiscount">@style/TextAppearance.AppTheme.Product.Discount</item>
+        <item name="textAppearancePriceWithoutDiscount">
+            @style/TextAppearance.AppTheme.Product.Price.Without.Discount
+        </item>
+    </style>
+
+    <style name="TextAppearance.AppTheme.Small" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">8.7sp</item>
+        <item name="android:textColor">@color/colorDividerLabelText</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="TextAppearance.AppTheme.Product.Label" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">10.7sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.AppTheme.Product.Description" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">9.3sp</item>
+        <item name="android:textColor">@color/semiGrey</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="TextAppearance.AppTheme.Product.Discount" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">9.3sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="TextAppearance.AppTheme.Product.Price.Without.Discount" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">8sp</item>
+        <item name="android:textColor">@color/semiGrey</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+</resources>
